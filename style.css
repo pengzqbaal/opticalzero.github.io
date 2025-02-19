@@ -1,0 +1,49 @@
+body {
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: #f0f0f0;
+font-family: Arial, sans-serif;
+}
+.container {
+position: relative;
+width: 100%;
+max-width: 800px;
+}
+.optics-wheel {
+width: 100%;
+max-width: 600px;
+margin: 0 auto;
+}
+.wheel-svg {
+width: 100%;
+height: auto;
+}
+.main-circle {
+fill: #ffffff;
+stroke: #000000;
+stroke-width: 2;
+}
+.sector {
+fill: #e0e0e0;
+stroke: #000000;
+stroke-width: 1;
+transition: fill 0.3s;
+cursor: pointer;
+}
+.sector:hover {
+fill: #a0a0ff;
+}
+.info-panel {
+position: absolute;
+right: 0;
+top: 50%;
+transform: translateY(-50%);
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+display: none;
+}
