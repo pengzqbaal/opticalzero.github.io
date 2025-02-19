@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optics Knowledge Hub</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<div class="optics-wheel">
+<svg viewBox="0 0 400 400" class="wheel-svg">
+<!-- Main circle -->
+<circle cx="200" cy="200" r="180" class="main-circle"/>
+<!-- Optics subareas - example sectors -->
+<path d="M200,200 L380,200 A180,180 0 0,1 290,360 Z" class="sector" data-area="geometrical"/>
+<path d="M200,200 L290,360 A180,180 0 0,1 110,360 Z" class="sector" data-area="physical"/>
+<path d="M200,200 L110,360 A180,180 0 0,1 20,200 Z" class="sector" data-area="quantum"/>
+<path d="M200,200 L20,200 A180,180 0 0,1 110,40 Z" class="sector" data-area="laser"/>
+<path d="M200,200 L110,40 A180,180 0 0,1 290,40 Z" class="sector" data-area="applied"/>
+<path d="M200,200 L290,40 A180,180 0 0,1 380,200 Z" class="sector" data-area="nonlinear"/>
+</svg>
+</div>
+<div id="info-panel" class="info-panel"></div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
